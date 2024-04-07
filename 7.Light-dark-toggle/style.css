@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color : rgb(1, 0, 0);
+    --text-color : #fff;
+    --btn-bg-color : #95e326;
+    --btn-text-color : #000;
+}
+[data-theme = 'dark']{
+    --bg-color : #fff;
+    --text-color : #000;
+    --btn-bg-color : #000;
+    --btn-text-color : #95e326;
+
+}
+[data-theme = 'blue']{
+    --bg-color : #0221b9;
+    --text-color : #a70d0d;
+    --btn-bg-color : #dd237d;
+    --btn-text-color : #c1a398;
+
+}
+body{
+    background-color: var(--bg-color);
+}
+
+.container .change-theme-btn{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+
+}
+/* body.light{
+    background-color: #0a4851;
+}
+
+body.dark{
+    background-color: #9cbb63;
+} */
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.container h1{
+    color: #ffff;
+}
+/* .container .change-theme-btn.light{
+    padding: 12px 20px;
+    border: none;
+    background-color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffff;
+}
+.container .change-theme-btn.dark{
+    color: #000;
+    background-color: #fff;
+    padding: 12px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+} */
